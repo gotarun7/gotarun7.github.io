@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Lessmilk Game: Run </title>
+    <meta charset="utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="style/style.css" />
+<meta name="viewport" content="initial-scale=1.0" />
+
+
+  <script type="text/javascript" src="js/phaser113.min.js"></script>
+  <script type="text/javascript" src="js/load.js"></script>
+  <script type="text/javascript" src="js/play.js"></script>
+  <script type="text/javascript" src="js/over.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  </head>
+
+  <body class="game">
+
+    <h1>Lessmilk Game: Run</h1>
+
+    <div id="gameContainer" style="width:350px"> </div>
+
+<!--
+    <div class="box">
+
+    You can <a href="/games/run">check out my other games</a> <br />
+    Or <a href="/">learn how to make 2D games</a> 
+</div>
+    <div class="box2">This game is not mobile friendly</div>
+-->
+
+<!--  
+<script src="/js/popup.js" defer></script>
+<div id="popup">
+	<span id="close">x</span>
+	<div class="showMobile">
+		<strong>Get my free ebook</strong> "How To Create and Promote Your Own Games" <br />
+		By joining the newsletter: <a href="/newsletter" class="button">Join</a>
+	</div>
+
+	<div class="showDesktop">
+		<strong>Get my free ebook</strong> "How To Create and Promote Your Own Games" <br />
+		By joining the newsletter: <a href="/newsletter" class="button">Join</a>
+	</div>
+</div>
+
+
+<div id="popup2">
+	<div id="bg"></div>
+	<div class="txt">
+		<h2>Wait! Get my free ebook :-)</h2>
+		<p>Want to get my free ebook <br />
+			"How To Create and Promote Your Own Games" <br />
+			 and be notified when I write new gamedev tutorials? </p>
+		<p>Then join the newsletter below.</p>
+
+		<form action="https://app.convertkit.com/landing_pages/63654/subscribe.html" method="post">
+-->
+		<!--<input type="text" placeholder="First Name" name="first_name">-->
+
+<!--
+		<input type="email" placeholder="Your Email" name="email" required>
+		<input type="submit" value="Join Newsletter"> 
+
+		<p class="small">More than 12,000 people already joined. <br />
+			No spam and unsubscribe at any time. </p>
+		</form>
+	</div>
+</div>
+-->
+
+
+<script>
+	var x = document.referrer;
+
+	if (x.indexOf('google') > -1) 
+		document.addEventListener("mouseleave", function(e){
+		    if(e.clientY < 0)
+		    {
+		    	a = document.getElementById('popup2');
+		        a.style.visibility = 'visible';
+		    }
+		}, false);
+
+	b = document.getElementById('bg');
+	b.addEventListener("click", function() {
+		a = document.getElementById('popup2');
+		a.style.visibility = 'hidden';
+	});
+</script>
+
+</body>
+</html>
+
